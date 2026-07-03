@@ -1,0 +1,34 @@
+{
+  "fuzzy_threshold": 85,
+  "section_keywords": {
+    "TIEN_SU": [
+      "tiền sử bệnh",
+      "tiền sử:",
+      "ts:",
+      "bản thân:",
+      "tiền sử nội khoa",
+      "bệnh lý cũ"
+    ],
+    "HIEN_TAI": [
+      "bệnh sử hiện tại",
+      "bệnh sử:",
+      "quá trình bệnh lý",
+      "diễn biến bệnh"
+    ],
+    "DANH_GIA": [
+      "đánh giá tại bệnh viện",
+      "khám lâm sàng",
+      "cận lâm sàng",
+      "kết quả xét nghiệm",
+      "tình trạng lúc vào viện",
+      "lâm sàng:"
+    ]
+  },
+  "hard_overrides": [
+    {
+      "trigger_section": "TIEN_SU",
+      "required_keywords": ["hiện tại", "diễn biến"],
+      "target_section": "HIEN_TAI"
+    }
+  ]
+}

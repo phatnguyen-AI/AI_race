@@ -1,0 +1,366 @@
+file_id,section_type,start_index,end_index,matched_header
+1.txt,TIEN_SU,0,405,1.  Tiền sử bệnh
+1.txt,HIEN_TAI,405,2423,2.  Tiền sử bệnh hiện tại
+1.txt,DANH_GIA,2423,2450,3.  Đánh giá tại bệnh viện
+1.txt,DANH_GIA,2450,2942,Kết quả khám lâm sàng
+2.txt,TIEN_SU,0,139,1.  Tiền sử bệnh nội khoa
+2.txt,HIEN_TAI,139,496,2.  Tiền sử bệnh hiện tại
+2.txt,DANH_GIA,496,593,3.  Đánh giá tại bệnh viện
+3.txt,TIEN_SU,0,16,1. Tiền sử bệnh
+3.txt,DANH_GIA,16,415,Các tập kinh lâm sàng trước đây
+3.txt,HIEN_TAI,415,3926,2. Bệnh sử hiện tại
+3.txt,DANH_GIA,3926,3952,3. Đánh giá tại bệnh viện
+3.txt,DANH_GIA,3952,4428,Kết quả xét nghiệm
+4.txt,TIEN_SU,0,17,1.  Tiền sử bệnh
+4.txt,TIEN_SU,17,133,Bệnh nhân có tiền sử dụng thuốc
+4.txt,HIEN_TAI,133,1788,2.  Tiền sử bệnh hiện tại
+4.txt,DANH_GIA,1788,2246,.Đánh giá tại bệnh viện
+5.txt,TIEN_SU,0,213,1.  Tiền sử bệnh nội khoa
+5.txt,HIEN_TAI,213,535,2.  Tiền sử bệnh hiện tại
+5.txt,DANH_GIA,535,562,3.  Đánh giá tại bệnh viện
+5.txt,DANH_GIA,562,758,Dấu hiệu lâm sàng
+5.txt,DANH_GIA,758,1420,Kết quả xét nghiệm
+6.txt,TIEN_SU,0,139,1.  Tiền sử bệnh nội khoa
+6.txt,HIEN_TAI,139,558,2.  Tiền sử bệnh hiện tại
+6.txt,DANH_GIA,558,584,3.  Đánh giá tại bệnh viện
+7.txt,TIEN_SU,0,346,1.  Tiền sử bệnh
+7.txt,HIEN_TAI,346,1703,2.  Tiền sử bệnh hiện tại
+7.txt,DANH_GIA,1703,2308,3.  Đánh giá tại bệnh viện
+8.txt,HIEN_TAI,0,964,Bệnh sử
+9.txt,TIEN_SU,0,110,1.  Tiền sử bệnh
+9.txt,HIEN_TAI,110,637,2.  Lịch sử bệnh hiện tại
+9.txt,DANH_GIA,637,1069,3.  Đánh giá tại bệnh viện
+10.txt,TIEN_SU,0,59,1. Tiền sử bệnh nội khoa
+10.txt,HIEN_TAI,59,201,2. Tiền sử bệnh hiện tại
+10.txt,DANH_GIA,201,784,3. Đánh giá tại bệnh viện
+11.txt,TIEN_SU,0,327,1.  Tiền sử bệnh nội khoa
+11.txt,HIEN_TAI,327,379,2.  Tiền sử bệnh hiện tại
+11.txt,DANH_GIA,379,514,3.  Đánh giá tại bệnh viện
+12.txt,TIEN_SU,0,86,1.  Tiền sử bệnh nội khoa
+12.txt,HIEN_TAI,86,268,2.  Tiền sử bệnh hiện tại
+12.txt,HIEN_TAI,268,984,Diễn biến bệnh
+12.txt,DANH_GIA,984,1210,3.  Đánh giá tại bệnh viện
+13.txt,TIEN_SU,0,526,1.  Tiền sử bệnh
+13.txt,HIEN_TAI,526,638,2.  Tiền sử bệnh hiện tại
+13.txt,HIEN_TAI,638,2416,Diễn biến bệnh
+13.txt,DANH_GIA,2416,2572,3.  Đánh giá tại bệnh viện
+14.txt,TIEN_SU,0,26,1.  Tiền sử bệnh nội khoa
+14.txt,HIEN_TAI,26,798,2.  Tiền sử bệnh hiện tại
+15.txt,HIEN_TAI,0,93,2. Bệnh sử hiện tại
+15.txt,DANH_GIA,93,281,3. Đánh giá tại bệnh viện
+16.txt,TIEN_SU,0,353,1. Tiền sử bệnh
+16.txt,HIEN_TAI,353,485,2. Bệnh sử hiện tại
+16.txt,HIEN_TAI,485,1447,Diễn biến bệnh
+16.txt,DANH_GIA,1447,1712,3. Đánh giá tại bệnh viện
+16.txt,DANH_GIA,1712,2286,Dấu hiệu lâm sàng
+17.txt,TIEN_SU,0,98,1. Tiền sử bệnh nội khoa
+17.txt,HIEN_TAI,98,248,2. Bệnh sử hiện tại
+17.txt,HIEN_TAI,248,1069,Diễn biến bệnh
+17.txt,DANH_GIA,1069,1095,3. Đánh giá tại bệnh viện
+17.txt,DANH_GIA,1095,1352,Kết quả khám lâm sàng
+17.txt,DANH_GIA,1352,1983,Kết quả xét nghiệm máu
+18.txt,TIEN_SU,0,109,1.  Tiền sử bệnh nội khoa
+18.txt,HIEN_TAI,109,437,2.  Tiền sử bệnh hiện tại
+18.txt,DANH_GIA,437,833,3.  Đánh giá tại bệnh viện
+19.txt,TIEN_SU,0,417,1.  Tiền sử bệnh nội khoa
+19.txt,HIEN_TAI,417,527,2.  Tiền sử bệnh hiện tại
+19.txt,HIEN_TAI,527,1110,Diễn biến bệnh
+19.txt,DANH_GIA,1110,1150,3.  Đánh giá tại bệnh viện
+19.txt,DANH_GIA,1150,1216,Dấu hiệu lâm sàng: Bầm máu vùng bẹn trái (được phát hiện tại phòng cấp cứu)
+20.txt,TIEN_SU,0,222,1.  Tiền sử bệnh
+20.txt,TIEN_SU,222,596,Tiền sử phẫu thuật / thủ thuật
+20.txt,HIEN_TAI,596,721,2.  Tiền sử bệnh hiện tại
+20.txt,HIEN_TAI,721,1822,Diễn biến bệnh
+20.txt,DANH_GIA,1822,1849,3.  Đánh giá tại bệnh viện
+20.txt,DANH_GIA,1849,3007,Kết quả khám lâm sàng
+21.txt,TIEN_SU,0,366,1.  Tiền sử bệnh
+21.txt,HIEN_TAI,366,494,2.  Tiền sử bệnh hiện tại
+21.txt,DANH_GIA,494,520,3.  Đánh giá tại bệnh viện
+22.txt,TIEN_SU,0,16,1. Tiền sử bệnh
+22.txt,TIEN_SU,16,99,Bệnh lý mãn tính: bệnh mạch máu
+22.txt,HIEN_TAI,99,119,2. Bệnh sử hiện tại
+22.txt,DANH_GIA,119,379,3. Đánh giá tại bệnh viện
+23.txt,TIEN_SU,0,108,1.  Tiền sử bệnh lý
+23.txt,HIEN_TAI,108,2297,Bệnh sử
+23.txt,DANH_GIA,2297,2323,3. Đánh giá tại bệnh viện
+23.txt,DANH_GIA,2323,2571,Khám lâm sàng:
+23.txt,DANH_GIA,2571,2878,"Cận lâm sàng: CT sọ não trước đó ghi nhận xuất huyết dưới nhện vùng trán phải.Bầm dập nhu mô vùng trán phải và trán - thái dương phải.Lớp dịch dưới màng cứng mỏng vùng thùy trán phải, nghĩ đến nang màng nhện hoặc tụ máu dưới màng cứng mạn tính.Tụ máu ngoài màng cứng phải cấp tính trên nền tổn thương mạn tính."
+24.txt,TIEN_SU,0,100,1.  Tiền sử bệnh
+24.txt,TIEN_SU,100,214,Tiền sử phẫu thuật / thủ thuật
+24.txt,HIEN_TAI,214,485,2.  Tiền sử bệnh hiện tại
+24.txt,HIEN_TAI,485,1126,Diễn biến bệnh
+24.txt,DANH_GIA,1126,1361,Dấu hiệu lâm sàng
+25.txt,TIEN_SU,0,189,1.  Tiền sử bệnh nội khoa
+25.txt,HIEN_TAI,189,440,2.  Tiền sử bệnh hiện tại
+26.txt,TIEN_SU,0,60,1.  Tiền sử bệnh nội khoa
+26.txt,HIEN_TAI,60,352,2.  Tiền sử bệnh hiện tại
+26.txt,DANH_GIA,352,378,3.  Đánh giá tại bệnh viện
+27.txt,TIEN_SU,0,365,1.  Tiền sử bệnh
+27.txt,HIEN_TAI,365,954,2.  Tiền sử bệnh hiện tại
+27.txt,DANH_GIA,954,1368,3.  Đánh giá tại bệnh viện
+28.txt,TIEN_SU,0,71,1.  Tiền sử bệnh
+28.txt,TIEN_SU,71,381,Bệnh lý mãn tính
+28.txt,HIEN_TAI,381,635,2.  Tiền sử bệnh hiện tại
+28.txt,HIEN_TAI,635,1712,Diễn biến bệnh
+28.txt,DANH_GIA,1712,2422,3.  Đánh giá tại bệnh viện
+29.txt,TIEN_SU,0,27,1.  Tiền sử bệnh nội khoa
+29.txt,HIEN_TAI,27,259,2.  Tiền sử bệnh hiện tại
+29.txt,DANH_GIA,259,373,3.  Đánh giá tại bệnh viện
+30.txt,TIEN_SU,0,316,1.  Tiền sử bệnh nội khoa
+30.txt,HIEN_TAI,316,431,2.  Tiền sử bệnh hiện tại
+30.txt,HIEN_TAI,431,1491,Diễn biến
+30.txt,DANH_GIA,1491,1517,3.  Đánh giá tại bệnh viện
+31.txt,HIEN_TAI,36,196,"Lý do nhập viện: Khởi phát chuyển dạBệnh sử: Thai 41 tuần, nhập viện để khởi phát chuyển dạ. Hiện có cơn co tử cung,"
+32.txt,TIEN_SU,0,186,1. Tiền sử bệnh nội
+32.txt,HIEN_TAI,186,2326,2. Bệnh sử hiện tại
+33.txt,TIEN_SU,0,209,1.  Tiền sử bệnh
+33.txt,HIEN_TAI,209,1332,2.  Tiền sử bệnh hiện tại
+33.txt,DANH_GIA,1332,1627,3.  Đánh giá tại bệnh viện
+34.txt,TIEN_SU,0,303,1.  Tiền sử bệnh nội khoa
+34.txt,HIEN_TAI,303,1351,2.  Tiền sử bệnh hiện tại
+34.txt,DANH_GIA,1351,1377,3.  Đánh giá tại bệnh viện
+35.txt,TIEN_SU,0,424,1.  Tiền sử bệnh nội khoa
+35.txt,HIEN_TAI,424,636,2.  Tiền sử bệnh hiện tại
+35.txt,HIEN_TAI,636,1234,Diễn biến bệnh
+35.txt,DANH_GIA,1234,1261,3.  Đánh giá tại bệnh viện
+35.txt,DANH_GIA,1261,1725,Kết quả xét nghiệm
+36.txt,TIEN_SU,0,335,1.  Tiền sử bệnh
+36.txt,HIEN_TAI,335,1870,2.  Tiền sử bệnh hiện tại
+36.txt,DANH_GIA,1870,2420,3.  Đánh giá tại bệnh viện
+37.txt,TIEN_SU,0,16,1. Tiền sử bệnh
+37.txt,TIEN_SU,16,529,Tiền sử bệnh nội khoa:
+37.txt,HIEN_TAI,529,1309,2. Bệnh sử hiện tại
+37.txt,DANH_GIA,1309,1335,3. Đánh giá tại bệnh viện
+37.txt,DANH_GIA,1335,1739,Kết quả xét nghiệm
+38.txt,TIEN_SU,0,214,1.  Tiền sử bệnh
+38.txt,HIEN_TAI,214,938,2.  Tiền sử bệnh hiện tại
+38.txt,DANH_GIA,938,965,3.  Đánh giá tại bệnh viện
+38.txt,DANH_GIA,965,1133,Kết quả xét nghiệm
+39.txt,HIEN_TAI,0,366,2. Bệnh sử hiện tại
+39.txt,DANH_GIA,366,392,3. Đánh giá tại bệnh viện
+39.txt,DANH_GIA,392,433,Dấu hiệu lâm sàng
+39.txt,DANH_GIA,433,670,Kết quả xét nghiệm
+40.txt,TIEN_SU,0,251,1.  Tiền sử bệnh lý
+40.txt,HIEN_TAI,251,1476,2.  Tiền sử bệnh hiện tại
+40.txt,DANH_GIA,1476,1503,3.  Đánh giá tại bệnh viện
+40.txt,DANH_GIA,1503,1752,Kết quả xét nghiệm
+41.txt,TIEN_SU,0,312,1.  Tiền sử bệnh
+41.txt,TIEN_SU,312,679,Tiền sử phẫu thuật / thủ thuật
+41.txt,HIEN_TAI,679,1180,2.  Tiền sử bệnh hiện tại
+41.txt,HIEN_TAI,1180,3347,Diễn biến bệnh
+42.txt,TIEN_SU,0,173,1.  Tiền sử bệnh nội khoa
+42.txt,HIEN_TAI,173,899,2.  Tiền sử bệnh hiện tại
+42.txt,DANH_GIA,899,925,3.  Đánh giá tại bệnh viện
+43.txt,TIEN_SU,0,137,1.  Tiền sử bệnh nội khoa
+43.txt,HIEN_TAI,137,1127,2.  Tiền sử bệnh hiện tại
+43.txt,DANH_GIA,1127,1508,3.  Đánh giá tại bệnh viện
+44.txt,TIEN_SU,0,101,1. Tiền sử bệnh
+44.txt,HIEN_TAI,101,230,2. Bệnh sử hiện tại
+44.txt,HIEN_TAI,230,1628,Diễn biến bệnh
+44.txt,DANH_GIA,1628,1980,3. Đánh giá tại bệnh viện
+45.txt,TIEN_SU,0,245,1.  Tiền sử bệnh
+45.txt,HIEN_TAI,245,816,2.  Tiền sử bệnh hiện tại
+45.txt,DANH_GIA,816,993,3.  Đánh giá tại bệnh viện
+46.txt,TIEN_SU,0,143,1.  Tiền sử bệnh
+46.txt,HIEN_TAI,143,428,2.  Tiền sử bệnh hiện tại
+46.txt,DANH_GIA,428,616,3.  Đánh giá tại bệnh viện
+47.txt,TIEN_SU,0,284,1.  Tiền sử bệnh nội khoa
+47.txt,HIEN_TAI,284,377,2.  Tiền sử bệnh hiện tại
+47.txt,HIEN_TAI,377,2516,Diễn biến bệnh
+47.txt,DANH_GIA,2516,2556,3.  Đánh giá tại bệnh viện
+47.txt,DANH_GIA,2556,2984,"Dấu hiệu lâm sàng: đau khi sờ nắn xung quanh vị trí đặt ống dẫn, đặc biệt là khi hít thở sâu"
+48.txt,TIEN_SU,0,76,1.  Tiền sử bệnh
+48.txt,HIEN_TAI,76,187,2.  Tiền sử bệnh hiện tại
+48.txt,HIEN_TAI,187,2644,Diễn biến bệnh
+48.txt,DANH_GIA,2644,2762,3.  Đánh giá tại bệnh viện
+49.txt,HIEN_TAI,16,1275,2. Bệnh sử hiện tại
+50.txt,TIEN_SU,0,199,1.  Tiền sử bệnh
+50.txt,HIEN_TAI,199,441,2.  Tiền sử bệnh hiện tại
+50.txt,HIEN_TAI,441,1740,Diễn biến bệnh
+50.txt,DANH_GIA,1740,2073,3.  Đánh giá tại bệnh viện
+51.txt,TIEN_SU,0,100,1.  Tiền sử bệnh nội khoa
+51.txt,HIEN_TAI,100,818,2.  Tiền sử bệnh hiện tại
+51.txt,DANH_GIA,818,1003,3.  Đánh giá tại bệnh viện
+51.txt,DANH_GIA,1003,1311,Kết quả xét nghiệm
+52.txt,TIEN_SU,0,26,1.  Tiền sử bệnh nội khoa
+52.txt,TIEN_SU,26,288,Tiền sử phẫu thuật / thủ thuật
+52.txt,HIEN_TAI,288,729,2.  Tiền sử bệnh hiện tại
+52.txt,DANH_GIA,729,989,3.  Đánh giá tại bệnh viện
+53.txt,TIEN_SU,0,104,1.  Tiền sử bệnh
+53.txt,TIEN_SU,104,391,Bệnh lý mãn tính
+53.txt,HIEN_TAI,391,1105,2.  Tiền sử bệnh bệnh hiện tại
+53.txt,DANH_GIA,1105,1229,3.  Đánh giá tại bệnh viện
+54.txt,TIEN_SU,0,151,1. Tiền sử bệnh
+54.txt,TIEN_SU,151,360,Tiền sử phẫu thuật / thủ thuật
+54.txt,HIEN_TAI,360,428,2. Bệnh sử hiện tại
+54.txt,HIEN_TAI,428,2164,Diễn biến bệnh
+54.txt,DANH_GIA,2164,2535,3. Đánh giá tại bệnh viện
+54.txt,DANH_GIA,2535,2956,Kết quả xét nghiệm
+55.txt,HIEN_TAI,0,111,2. Lịch sử bệnh hiện tại
+55.txt,DANH_GIA,111,136,3. Đánh giá tại bệnh viện
+56.txt,HIEN_TAI,125,732,2. Tiền sử bệnh bệnh hiện tại
+56.txt,DANH_GIA,732,758,3. Đánh giá tại bệnh viện
+56.txt,DANH_GIA,758,1499,Kết quả thăm khám lâm sàng
+57.txt,TIEN_SU,0,27,1.  Tiền sử bệnh nội khoa
+57.txt,HIEN_TAI,27,230,2.  Tiền sử bệnh hiện tại
+57.txt,DANH_GIA,230,373,3.  Đánh giá tại bệnh viện
+58.txt,TIEN_SU,0,98,1.  Tiền sử bệnh
+58.txt,HIEN_TAI,98,352,2.  Tiền sử bệnh hiện tại
+58.txt,HIEN_TAI,352,2424,Diễn biến bệnh
+58.txt,DANH_GIA,2424,2451,3.  Đánh giá tại bệnh viện
+58.txt,DANH_GIA,2451,2708,Dấu hiệu lâm sàng
+58.txt,DANH_GIA,2708,2931,Kết quả xét nghiệm
+59.txt,TIEN_SU,0,425,1.  Tiền sử bệnh
+59.txt,TIEN_SU,425,656,Tiền sử phẫu thuật / thủ thuật
+59.txt,HIEN_TAI,656,808,2.  Tiền sử bệnh hiện tại
+59.txt,HIEN_TAI,808,1822,Diễn biến bệnh
+59.txt,DANH_GIA,1822,1862,3.  Đánh giá tại bệnh viện
+59.txt,DANH_GIA,1862,2126,"Dấu hiệu lâm sàng: Phù gai thị, bên trái nặng hơn bên phải (theo báo cáo của bác sĩ nhãn khoa)"
+60.txt,TIEN_SU,0,102,1.  Tiền sử bệnh nội khoa
+60.txt,HIEN_TAI,102,551,2.  Tiền sử bệnh hiện tại
+60.txt,DANH_GIA,551,879,3.  Đánh giá tại bệnh viện
+61.txt,TIEN_SU,0,143,1.  Tiền sử bệnh
+61.txt,HIEN_TAI,143,378,2.  Tiền sử bệnh hiện tại
+61.txt,HIEN_TAI,378,979,Diễn biến bệnh
+61.txt,DANH_GIA,979,1215,3.  Đánh giá tại bệnh viện
+62.txt,TIEN_SU,0,26,1.  Tiền sử bệnh nội khoa
+62.txt,TIEN_SU,26,158,Tiền sử phẫu thuật / thủ thuật
+62.txt,HIEN_TAI,158,308,2.  Tiền sử bệnh hiện tại
+62.txt,DANH_GIA,308,334,3.  Đánh giá tại bệnh viện
+63.txt,TIEN_SU,0,183,1.  Tiền sử bệnh nội khoa
+63.txt,HIEN_TAI,183,307,2.  Tiền sử bệnh hiện tại
+63.txt,HIEN_TAI,307,1156,Diễn biến bệnh
+63.txt,DANH_GIA,1156,1676,3.  Đánh giá tại bệnh viện
+64.txt,TIEN_SU,0,389,1.  Tiền sử bệnh
+64.txt,TIEN_SU,389,615,Bệnh lý mãn tính
+64.txt,HIEN_TAI,615,1517,2.  Tiền sử bệnh hiện tại
+64.txt,DANH_GIA,1517,1544,3.  Đánh giá tại bệnh viện
+64.txt,DANH_GIA,1544,1747,Dấu hiệu lâm sàng
+65.txt,HIEN_TAI,55,559,2. Bệnh sử hiện tại
+65.txt,DANH_GIA,559,585,3. Đánh giá tại bệnh viện
+65.txt,DANH_GIA,585,646,Kết quả xét nghiệm
+66.txt,TIEN_SU,0,260,1.  Tiền sử bệnh nội khoa
+66.txt,HIEN_TAI,260,741,2.  Lịch sử bệnh hiện tại
+66.txt,DANH_GIA,741,768,3.  Đánh giá tại bệnh viện
+66.txt,DANH_GIA,768,1416,Kết quả xét nghiệm xét nghiệm
+67.txt,TIEN_SU,0,27,1.  Tiền sử bệnh nội khoa
+67.txt,HIEN_TAI,27,330,2.  Tiền sử bệnh hiện tại
+67.txt,DANH_GIA,330,503,3.  Đánh giá tại bệnh viện
+68.txt,TIEN_SU,0,128,1.  Tiền sử bệnh nội khoa
+68.txt,HIEN_TAI,128,271,2.  Tiền sử bệnh hiện tại
+68.txt,DANH_GIA,271,297,3.  Đánh giá tại bệnh viện
+69.txt,TIEN_SU,0,26,1.  Tiền sử bệnh nội khoa
+69.txt,TIEN_SU,26,179,Tiền sử phẫu thuật / thủ thuật
+69.txt,HIEN_TAI,179,540,2.  Tiền sử bệnh hiện tại
+69.txt,DANH_GIA,540,983,3.  Đánh giá tại bệnh viện
+70.txt,TIEN_SU,0,339,1. Tiền sử bệnh
+70.txt,HIEN_TAI,339,509,2. Bệnh sử hiện tại
+70.txt,HIEN_TAI,509,1783,Diễn biến bệnh
+70.txt,DANH_GIA,1783,1809,3. Đánh giá tại bệnh viện
+70.txt,DANH_GIA,1809,2360,Kết quả xét nghiệm
+71.txt,TIEN_SU,0,208,1. Tiền sử bệnh
+71.txt,TIEN_SU,208,299,Tiền sử phẫu thuật / thủ thuật: CABG
+71.txt,HIEN_TAI,299,669,2. Bệnh sử hiện tại
+71.txt,DANH_GIA,669,1009,3. Đánh giá tại bệnh viện
+72.txt,TIEN_SU,0,27,1.  Tiền sử bệnh nội khoa
+72.txt,HIEN_TAI,27,778,2.  Tiền sử bệnh hiện tại
+72.txt,DANH_GIA,778,805,3.  Đánh giá tại bệnh viện
+72.txt,DANH_GIA,805,1497,Kết quả xét nghiệm
+73.txt,TIEN_SU,0,1056,1.  Tiền sử bệnh
+73.txt,HIEN_TAI,1056,1196,2.  Tiền sử bệnh hiện tại
+73.txt,HIEN_TAI,1196,1681,Diễn biến bệnh
+73.txt,DANH_GIA,1681,1707,3.  Đánh giá tại bệnh viện
+74.txt,TIEN_SU,0,308,1.  Tiền sử bệnh
+74.txt,HIEN_TAI,308,418,2.  Tiền sử bệnh bệnh hiện tại
+74.txt,HIEN_TAI,418,1476,Diễn biến bệnh
+74.txt,DANH_GIA,1476,1805,3.  Đánh giá tại bệnh viện
+75.txt,TIEN_SU,0,154,1.  Tiền sử bệnh
+75.txt,TIEN_SU,154,598,Tiền sử phẫu thuật / thủ thuật
+75.txt,HIEN_TAI,598,1546,2.  bệnh sử hiện tại
+75.txt,DANH_GIA,1546,1579,Dấu hiệu lâm sàng: vã mồ hôi
+75.txt,DANH_GIA,1579,1828,Kết quả xét nghiệm: troponin là 0.10
+76.txt,TIEN_SU,0,134,1.  Tiền sử bệnh
+76.txt,TIEN_SU,134,396,Tiền sử phẫu thuật / thủ thuật
+76.txt,HIEN_TAI,396,1065,2.  Tiền sử bệnh hiện tại
+76.txt,DANH_GIA,1065,1255,Kết quả xét nghiệm:
+77.txt,TIEN_SU,0,616,1.  Tiền sử bệnh
+77.txt,HIEN_TAI,616,1232,2.   Bệnh sử hiện tại
+78.txt,TIEN_SU,0,155,1.  Tiền sử bệnh
+78.txt,HIEN_TAI,155,546,2.  Bệnh sử hiện tại
+78.txt,DANH_GIA,546,589,Cận lâm sàng
+79.txt,TIEN_SU,0,17,1.  Tiền sử bệnh
+79.txt,TIEN_SU,17,61,Bệnh lý mãn tính: bàn chân vẹo bẩm sinh
+79.txt,TIEN_SU,61,176,Tiền sử phẫu thuật / thủ thuật
+79.txt,HIEN_TAI,176,344,2.  Bệnh sử hiện tại
+80.txt,TIEN_SU,0,91,1.  Tiền sử bệnh nội khoa
+80.txt,HIEN_TAI,91,336,2.  Bệnh sử  hiện tại
+80.txt,DANH_GIA,336,581,Cận lâm sàng:
+81.txt,HIEN_TAI,0,201,2. Bệnh sử hiện tại
+81.txt,DANH_GIA,201,462,3. Đánh giá tại bệnh viện
+82.txt,TIEN_SU,0,169,1.  Tiền sử bệnh
+82.txt,TIEN_SU,169,344,Tiền sử phẫu thuật / thủ thuật
+82.txt,HIEN_TAI,344,776,2.  Bệnh sử hiện tại
+82.txt,DANH_GIA,776,1251,Cận lâm sàng
+83.txt,HIEN_TAI,0,149,2. Bệnh sử hiện tại
+83.txt,DANH_GIA,149,211,Tình trạng lúc vào viện:
+83.txt,DANH_GIA,211,414,Cận lâm sàng:
+84.txt,TIEN_SU,0,170,1.  Tiền sử bệnh nội khoa
+84.txt,HIEN_TAI,170,818,2. Bệnh sử hiện tại
+84.txt,DANH_GIA,818,1415,Kết quả xét nghiệm
+85.txt,TIEN_SU,0,398,1.  Tiền sử bệnh nội khoa
+85.txt,TIEN_SU,398,562,Tiền sử phẫu thuật / thủ thuật
+85.txt,HIEN_TAI,562,585,2.  Bệnh sử  hiện tại
+85.txt,DANH_GIA,585,611,3.  Đánh giá tại bệnh viện
+86.txt,TIEN_SU,0,85,1. Tiền sử bệnh
+86.txt,HIEN_TAI,85,391,2. Bệnh sử hiện tại
+86.txt,DANH_GIA,391,859,Cận lâm sàng:
+87.txt,TIEN_SU,0,81,1.  Tiền sử bệnh
+87.txt,TIEN_SU,81,136,Bệnh lý mãn tính
+87.txt,HIEN_TAI,136,1177,2.  Bệnh sử hiện tại
+88.txt,TIEN_SU,0,233,1.  Tiền sử bệnh
+88.txt,TIEN_SU,233,411,Tiền sử phẫu thuật / thủ thuật:
+88.txt,HIEN_TAI,411,964,2.  Bệnh sử hiện tại
+89.txt,TIEN_SU,0,304,1.  Tiền sử bệnh
+89.txt,HIEN_TAI,304,1116,2.  Bệnh sử hiện tại
+89.txt,DANH_GIA,1116,1310,Tình trạng lúc vào viện:
+89.txt,DANH_GIA,1310,1438,Cận lâm sàng:
+90.txt,HIEN_TAI,0,148,2. Bệnh sử hiện tại
+90.txt,DANH_GIA,148,235,3. Đánh giá tại bệnh viện
+91.txt,TIEN_SU,0,270,1.  Tiền sử bệnh
+91.txt,TIEN_SU,270,424,Tiền sử phẫu thuật / thủ thuật
+91.txt,HIEN_TAI,424,1163,2.  Bệnh sử hiện tại
+92.txt,TIEN_SU,0,86,1.  Tiền sử bệnh nội khoa
+92.txt,HIEN_TAI,86,421,2.  Bệnh sử  hiện tại
+92.txt,DANH_GIA,421,448,3.  Đánh giá tại bệnh viện
+92.txt,DANH_GIA,448,612,Kết quả xét nghiệm: Bạch cầu tăng
+93.txt,TIEN_SU,0,79,1. Tiền sử bệnh nội khoa
+93.txt,HIEN_TAI,79,146,2. Bệnh sử hiện tại
+93.txt,DANH_GIA,146,373,Lâm sàng: tràn dịch màng ngoài tim mức độ trung bình
+94.txt,TIEN_SU,0,139,1.  Tiền sử bệnh nội khoa
+94.txt,HIEN_TAI,139,504,2.  Bệnh sử hiện tại
+94.txt,DANH_GIA,504,860,Tình trạng lúc vào:
+94.txt,DANH_GIA,860,887,3.  Đánh giá tại bệnh viện
+95.txt,TIEN_SU,0,78,1.  Tiền sử bệnh
+95.txt,HIEN_TAI,78,281,2.  Bệnh sử  hin tại
+95.txt,DANH_GIA,281,647,Tình trạng lúc vào viện:
+95.txt,DANH_GIA,647,673,3.  Đánh giá tại bệnh viện
+96.txt,TIEN_SU,0,370,1. Tiền sử bệnh
+96.txt,HIEN_TAI,370,861,2. Bệnh sử hiện tại
+96.txt,DANH_GIA,861,1094,Tình trạng lúc vào:
+96.txt,DANH_GIA,1094,1639,Cận lâm sàng::
+97.txt,TIEN_SU,0,124,1.  Tiền sử bệnh nội khoa
+97.txt,HIEN_TAI,124,618,2.  Bệnh sử hiện tại
+97.txt,DANH_GIA,618,701,Dấu hiệu lâm sàng
+97.txt,DANH_GIA,701,1255,Kết quả xét nghiệm
+98.txt,TIEN_SU,0,26,1.  Tiền sử bệnh nội khoa
+98.txt,TIEN_SU,26,67,Bệnh mãn tính: tiền sử tăng huyết áp
+98.txt,HIEN_TAI,67,183,2.  Bệnh sử
+98.txt,DANH_GIA,183,375,Cận lâm sàng  trước khi nhập viện
+98.txt,DANH_GIA,375,499,3.  Đánh giá tại bệnh viện
+99.txt,TIEN_SU,0,173,1.  Tiền sử bệnh
+99.txt,HIEN_TAI,173,315,2.  Bệnh sử
+99.txt,DANH_GIA,315,341,3.  Đánh giá tại bệnh viện
+100.txt,TIEN_SU,0,231,1.  Tiền sử bệnh
+100.txt,HIEN_TAI,231,1120,2. Bệnh sử
+100.txt,DANH_GIA,1120,1147,3.  Đánh giá tại bệnh viện
+100.txt,DANH_GIA,1147,1513,Kết quả xétí nghiệm

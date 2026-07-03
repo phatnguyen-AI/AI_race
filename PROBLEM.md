@@ -26,7 +26,7 @@ Hệ thống AI được cung cấp các cơ sở tri thức y khoa là **ICD-10
 - **Đầu vào**: Một đoạn văn bản y khoa dạng tự do (free-form text) như kết quả khám lâm sàng, giấy xuất viện, ghi chú của bác sĩ, kết quả chẩn đoán hình ảnh, kết quả xét nghiệm, hồ sơ sức khỏe điện tử (EHR),...
 - **Đặc điểm**: Chứa thuật ngữ y khoa, từ viết tắt, thông tin bệnh nhân (đã được tổng hợp giả định - synthetic) và nhiều khái niệm xuất hiện đồng thời trong cùng một văn bản.
 - **Ví dụ**: 
-  > *"Bệnh nhân bị bệnh 1 tuần nay, ho đờm xanh, tức ngực, đau thượng vị, ợ hơi, được chẩn đoán mắc bệnh trào ngược dạ dày - thực quản."*
+  > *"Bệnh nhân bị bệnh 1 tuần nay, ho đờm xanh, tức ngực, đau thượng vị, ợ hơi, được chẩn đoán mắc bệnh trào ngược dạ dày - thực quan."*
 
 ### 2.2. Định dạng Đầu ra (Output)
 Đầu ra là danh sách các khái niệm y tế được phát hiện dưới dạng một danh sách các dictionary chứa các trường sau:
