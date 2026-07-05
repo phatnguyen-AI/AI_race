@@ -9,35 +9,66 @@ from tqdm import tqdm
 load_dotenv()
 client = OpenAI(api_key=os.environ.get("OPENAI_API_KEY"))
 
+# HỒ CHỨA IN-DOMAIN (Dành cho 80% dữ liệu)
 disease_pool = [
     "trào ngược dạ dày - thực quản", "viêm phổi thùy", "đái tháo đường tuýp 2", 
-    "tăng huyết áp", "nhồi máu cơ tim vùng dưới cũ", "xơ gan do rượu", "rung nhĩ", "sỏi đoạn cuối ống mật chủ"
-]
-symptom_pool = [
-    "ho đờm xanh", "tức ngực", "đau thượng vị", "ợ hơi", "chóng mặt", 
-    "khó thở khi gắng sức", "phù mắt cá chân", "ngất xỉu", "đau bụng hạ sườn phải", "buồn nôn thoáng qua", "đánh trống ngực"
-]
-drug_pool = [
-    "Chlorpheniramine", "Capsaicin", "metoprolol 25mg po bid", "doxycycline", "atenolol", 
-    "NSAID", "omeprazole", "aspirin 325mg"
-]
-test_pool = [
-    "WBC", "NEUT%", "LYPH%", "Siêu âm bụng", "chụp x-quang ngực", 
-    "điện tâm đồ", "chụp cắt lớp vi tính sọ não", "Cộng hưởng từ mật tụy", "men gan"
+    "tăng huyết áp", "nhồi máu cơ tim vùng dưới cũ", "xơ gan do rượu", "rung nhĩ", "sỏi đoạn cuối ống mật chủ",
+    "bệnh tim thiếu máu cục bộ", "viêm phế quản mạn tính", "hen suyễn", "suy thận mạn", "viêm gan siêu vi B",
+    "viêm khớp dạng thấp", "loét dạ dày tá tràng", "rối loạn lipid máu", "suy tim sung huyết", "trĩ nội",
+    "viêm amidan cấp", "sốt xuất huyết Dengue", "đau dây thần kinh tọa", "viêm đường tiết niệu", "bướu cổ"
 ]
 
-def generate_synthetic_medical_record():
-    selected_diseases = random.sample(disease_pool, k=random.randint(1, 3))
-    selected_symptoms = random.sample(symptom_pool, k=random.randint(2, 5))
-    selected_drugs = random.sample(drug_pool, k=random.randint(1, 3))
-    selected_tests = random.sample(test_pool, k=random.randint(2, 4))
-    
+symptom_pool = [
+    "ho đờm xanh", "tức ngực", "đau thượng vị", "ợ hơi", "chóng mặt", 
+    "khó thở khi gắng sức", "phù mắt cá chân", "ngất xỉu", "đau bụng hạ sườn phải", "buồn nôn thoáng qua", "đánh trống ngực",
+    "ho khan", "tiêu chảy", "táo bón", "sốt cao liên tục", "rét run", "đau mỏi cơ khớp", "đau nửa đầu",
+    "tê bì chân tay", "tiểu buốt", "tiểu dắt", "vã mồ hôi", "sụt cân không rõ nguyên nhân", "mất ngủ"
+]
+
+drug_pool = [
+    "Chlorpheniramine", "Capsaicin", "metoprolol 25mg po bid", "doxycycline", "atenolol", 
+    "NSAID", "omeprazole", "aspirin 325mg", "Paracetamol", "Ibuprofen", "Amoxicillin", "Cefuroxime",
+    "Losartan", "Amlodipine", "Metformin", "Atorvastatin", "Salbutamol", "Pantoprazole", "Vitamin C",
+    "Insulin", "Clopidogrel", "Furosemide", "Spironolactone", "Levofloxacin"
+]
+
+test_pool = [
+    "WBC", "NEUT%", "LYPH%", "Siêu âm bụng", "chụp x-quang ngực", 
+    "điện tâm đồ", "chụp cắt lớp vi tính sọ não", "Cộng hưởng từ mật tụy", "men gan",
+    "RBC", "HGB", "PLT", "Glucose máu", "HbA1c", "Ure", "Creatinin", "AST", "ALT", "Bilirubin",
+    "X-quang cột sống thắt lưng", "Siêu âm tim", "Đo chức năng hô hấp", "Nội soi dạ dày", "Tổng phân tích nước tiểu"
+]
+
+def generate_synthetic_medical_record(is_indomain=True):
     length_type = random.choice([
         "NGẮN VÀ CỤT LỦN (khoảng 50 - 150 từ, ghi chép nhanh chóng, vắn tắt).",
         "TRUNG BÌNH (khoảng 200 - 300 từ, thông tin vừa đủ).",
         "RẤT DÀI VÀ LÊ THÊ (khoảng 400 - 800 từ, kể lể nhiều chi tiết râu ria, triệu chứng không mắc phải, hỏi đáp lan man)."
     ])
     
+    if is_indomain:
+        selected_diseases = random.sample(disease_pool, k=random.randint(1, 3))
+        selected_symptoms = random.sample(symptom_pool, k=random.randint(2, 5))
+        selected_drugs = random.sample(drug_pool, k=random.randint(1, 3))
+        selected_tests = random.sample(test_pool, k=random.randint(2, 4))
+        
+        domain_instruction = f"""
+**RÀNG BUỘC VỀ NỘI DUNG (Hồ chứa từ khóa - Bắt buộc dùng để bám sát chuyên khoa Nội/Hô Hấp/Tim mạch):**
+- Bệnh lý (CHẨN_ĐOÁN) phải chứa: {', '.join(selected_diseases)}
+- Triệu chứng (TRIỆU_CHỨNG) phải chứa: {', '.join(selected_symptoms)}
+- Loại thuốc (THUỐC) phải chứa: {', '.join(selected_drugs)}
+- Xét nghiệm (TÊN_XÉT_NGHIỆM / KẾT_QUẢ_XÉT_NGHIỆM) phải chứa: {', '.join(selected_tests)}
+"""
+    else:
+        # OUT-OF-DOMAIN: Ép mô hình tự bịa ra các chuyên khoa hiếm
+        specialties = ["Sản phụ khoa", "Nhi khoa", "Ung bướu", "Tâm thần", "Răng Hàm Mặt", "Da liễu", "Mắt", "Tai Mũi Họng"]
+        random_specialty = random.choice(specialties)
+        domain_instruction = f"""
+**RÀNG BUỘC VỀ NỘI DUNG (OUT-OF-DOMAIN - Khái quát hóa):**
+Bạn KHÔNG ĐƯỢC dùng các bệnh quen thuộc như Tim mạch, Huyết áp, Dạ dày.
+Hãy tạo một bệnh án thuộc chuyên khoa **{random_specialty}**. Tự sáng tạo ra các bệnh lý, thuốc, triệu chứng và xét nghiệm chuyên sâu, hiếm gặp của chuyên khoa này.
+"""
+
     prompt = f"""
 Bạn là một chuyên gia tạo dữ liệu y khoa giả lập (Synthetic Medical Data Generator).
 Hãy sinh ra một hồ sơ bệnh án tiếng Việt cực kỳ chân thực, lộn xộn và có độ phức tạp cao, mô phỏng chính xác văn phong của bác sĩ gõ vội trong bệnh viện.
@@ -51,24 +82,20 @@ Bệnh án BẮT BUỘC phải chia làm 3 phần:
 
 **YÊU CẦU ĐA DẠNG HÓA LỖI VÀ MÔ PHỎNG THỰC TẾ (BẮT BUỘC):**
 Để mô phỏng dữ liệu thực tế, bạn PHẢI áp dụng NGẪU NHIÊN các loại "Data bẩn" và thông tin sau vào `raw_text`:
-- Hành chính & Thời gian: Bắt đầu bệnh án bằng thông tin viết tắt như "BN nam, 70t" hoặc "BN nữ, 45t", kết hợp mốc thời gian "cách 2 tuần", "lúc 17h30".
-- Chỉ số sinh tồn (Vitals) lộn xộn: Chèn các chuỗi đo lường thực tế hệt như máy xuất ra, VD: "VS98.3 12987 56 18 99RA" hoặc "mạch 83, HA 159/72".
-- Sự không chắc chắn (Hedging): Dùng các cụm từ "Theo dõi...", "Nghi ngờ...", "Chưa loại trừ..." trước các CHẨN_ĐOÁN để tăng độ khó.
-- Lỗi dính chữ sau dấu câu: VD "dạ dày.Bệnh nhân", "hiện tạiBệnh nhân", "bệnh.Không"
-- Lỗi lặp từ ngớ ngẩn (2-3 từ liên tiếp): VD "bình thườngbình thường", "khó thở nhẹ khó thở"
-- Lỗi đánh máy: VD "bênh nhân", "tụi mật" (thay vì túi mật), "xươg" (thay vì xương)
-- Viết tắt y khoa chuyên ngành dày đặc: "cls" (cận lâm sàng), "cđha" (chẩn đoán hình ảnh), "tbm" (tế bào máu), "spo2 RA", "po bid" (uống ngày 2 lần).
+- Hành chính & Thời gian: Bắt đầu bệnh án bằng thông tin viết tắt như "BN nam, 70t" hoặc "BN nữ, 45t".
+- Chỉ số sinh tồn (Vitals) lộn xộn: "VS98.3 12987 56 18 99RA" hoặc "mạch 83, HA 159/72".
+- Sự không chắc chắn (Hedging): "Theo dõi...", "Nghi ngờ...", "Chưa loại trừ...".
+- Lỗi dính chữ sau dấu câu: "dạ dày.Bệnh nhân", "hiện tạiBệnh nhân".
+- Lỗi đánh máy: "bênh nhân", "tụi mật", "xươg".
+- Viết tắt y khoa chuyên ngành: "cls", "cđha", "tbm", "spo2 RA", "po bid".
 
-**RÀNG BUỘC VỀ NỘI DUNG (Hồ chứa từ khóa - Bắt buộc dùng):**
-- Chọn Bệnh lý (CHẨN_ĐOÁN) từ: {', '.join(selected_diseases)}
-- Chọn Triệu chứng (TRIỆU_CHỨNG) từ: {', '.join(selected_symptoms)}
-- Chọn Loại thuốc (THUỐC) từ: {', '.join(selected_drugs)}
-- Chọn Xét nghiệm (TÊN_XÉT_NGHIỆM và KẾT_QUẢ_XÉT_NGHIỆM) từ: {', '.join(selected_tests)}
+{domain_instruction}
 
 **RÀNG BUỘC VỀ ĐỘ KHÓ & NHÃN (Assertions):**
-1. Đưa vào ít nhất 1 câu PHỦ ĐỊNH liên quan đến triệu chứng (VD: "Không có dấu hiệu đau ngực"). -> Gắn nhãn isNegated.
-2. Đưa vào ít nhất 1 thông tin TIỀN SỬ (VD: "Tiền sử đã từng sử dụng NSAIDs"). -> Gắn nhãn isHistorical.
-3. Trong mảng entities, giá trị `text` trích xuất ra phải LÀ MỘT CHUỖI CON CHÍNH XÁC 100% (exact substring) trích ra từ `raw_text` (Nếu trong raw_text cố tình viết sai chính tả từ đó, thì entity text cũng phải lưu từ sai chính tả y hệt).
+1. Đưa vào ít nhất 1 câu PHỦ ĐỊNH liên quan đến triệu chứng/bệnh (VD: "Không ho, không sốt"). -> Gắn nhãn isNegated.
+2. Đưa vào ít nhất 1 thông tin TIỀN SỬ (VD: "Trước đây từng bị viêm loét"). -> Gắn nhãn isHistorical.
+3. Đưa vào ít nhất 1 thông tin BỆNH LÝ CỦA NGƯỜI THÂN (VD: "Bố ruột mắc tiểu đường, mẹ bị tăng huyết áp"). -> Gắn nhãn isFamily.
+4. Trong mảng entities, giá trị `text` trích xuất ra phải LÀ MỘT CHUỖI CON CHÍNH XÁC 100% trích ra từ `raw_text` (Kể cả sai chính tả).
 
 Trả về định dạng JSON gồm:
 - "raw_text": Đoạn bệnh án
@@ -116,32 +143,29 @@ Trả về định dạng JSON gồm:
     )
     
     result = json.loads(response.choices[0].message.content)
+    
+    # Đã loại bỏ code gán `position` để đúng với thiết kế v4
 
-    raw_text = result["raw_text"]
-    for entity in result["entities"]:
-        start_idx = raw_text.find(entity["text"])
-        if start_idx != -1:
-            entity["position"] = [start_idx, start_idx + len(entity["text"])]
-        else:
-            entity["position"] = [-1, -1] 
-            
     return result
 
 if __name__ == "__main__":
     output_dir = "data"
     os.makedirs(output_dir, exist_ok=True)
-    num_samples_to_generate = 8000
-    print(f"{num_samples_to_generate}")
+    num_samples_to_generate = 10000  # Cập nhật thành 10000 theo v4
+    print(f"Bắt đầu sinh {num_samples_to_generate} file (80% In-domain, 20% Out-of-domain)...")
     
     def process_file(i):
         try:
             txt_path = os.path.join(output_dir, f"synthetic_{i}.txt")
             json_path = os.path.join(output_dir, f"synthetic_{i}.json")
             
+            # Bỏ qua nếu file đã tồn tại
             if os.path.exists(txt_path) and os.path.exists(json_path):
                 return True
                 
-            synthetic_data = generate_synthetic_medical_record()
+            # Phân bổ 80% In-domain, 20% Out-of-domain
+            is_indomain = True if i <= 8000 else False
+            synthetic_data = generate_synthetic_medical_record(is_indomain=is_indomain)
         
             with open(txt_path, "w", encoding="utf-8") as f:
                 f.write(synthetic_data["raw_text"])
@@ -153,8 +177,7 @@ if __name__ == "__main__":
         except Exception as e:
             return False
 
-
-    max_workers = 10
+    max_workers = 15 # Nâng worker để tối ưu tốc độ gọi API
     success_count = 0
     with concurrent.futures.ThreadPoolExecutor(max_workers=max_workers) as executor:
         futures = {executor.submit(process_file, i): i for i in range(1, num_samples_to_generate + 1)}
@@ -163,4 +186,4 @@ if __name__ == "__main__":
             if future.result():
                 success_count += 1
                 
-    print(f"\n xong {success_count}/{num_samples_to_generate} file.")
+    print(f"\n Xong {success_count}/{num_samples_to_generate} file.")

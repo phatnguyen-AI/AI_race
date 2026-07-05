@@ -103,6 +103,22 @@ class TextPreprocessor:
 
         # Sắp xếp các section theo vị trí xuất hiện trong văn bản
         section_ranges = []
+        
+        # Xử lý đoạn văn bản "mồ côi" ở đầu file (không có tiêu đề)
+        if detected_sections and detected_sections[0]['start_index'] > 0:
+            section_ranges.append({
+                'section_type': 'THONG_TIN_CHUNG',
+                'range': [0, detected_sections[0]['start_index']],
+                'matched_header': ''
+            })
+        elif not detected_sections:
+            # Nếu không tìm thấy section nào trong toàn văn bản
+            section_ranges.append({
+                'section_type': 'THONG_TIN_CHUNG',
+                'range': [0, len(text)],
+                'matched_header': ''
+            })
+
         for i in range(len(detected_sections)):
             start = detected_sections[i]['start_index']
             # End của section này là start của section tiếp theo (hoặc hết văn bản)
